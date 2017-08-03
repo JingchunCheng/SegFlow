@@ -8,11 +8,11 @@ This paper proposes an end-to-end trainable network, SegFlow, for simultaneously
 
 Video Results of SegFlow
 -------------------------------------------
-[![Optical Flow Comparison](https://pan.baidu.com/s/1nvicIKx/1.png)](https://www.youtube.com/watch?v=pyYbqeBteq4&feature=youtu.be)
+[![Optical Flow Comparison]](https://www.youtube.com/watch?v=pyYbqeBteq4&feature=youtu.be)
 
-[![Comparison with Unsupervised Method](https://img.youtube.com/vi/MzWSGgPMTlo&feature=youtu.be/0.jpg)](https://www.youtube.com/watch?v=MzWSGgPMTlo&feature=youtu.be)
+[![Comparison with Unsupervised Method]](https://www.youtube.com/watch?v=MzWSGgPMTlo&feature=youtu.be)
 
-[![Comparison with Semi-supervised Method](https://img.youtube.com/vi/FN_ePVSDMvo&feature=youtu.be/0.jpg)](https://www.youtube.com/watch?v=FN_ePVSDMvo&feature=youtu.be)
+[![Comparison with Semi-supervised Method]](https://www.youtube.com/watch?v=FN_ePVSDMvo&feature=youtu.be)
 
 
 Citing SegFlow
