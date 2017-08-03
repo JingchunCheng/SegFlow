@@ -6,14 +6,17 @@ This paper proposes an end-to-end trainable network, SegFlow, for simultaneously
 
 [SegFlow]() will be published at ICCV2017.
 
+Video Results of SegFlow
+-------------------------------------------
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/pyYbqeBteq4&feature=youtu.be/0.jpg)](https://www.youtube.com/watch?v=pyYbqeBteq4&feature=youtu.be)
 
 Citing SegFlow
-------------------------------------------
+-------------------------------------------
 If you find SegFlow useful in your research, please consider citing:
 
 
 Contents
-------------------------------------------
+-------------------------------------------
 
 Code
-------------------------------------------
+-------------------------------------------
