@@ -31,29 +31,29 @@ Installation
 -----------------------------------------------------
 1. Download code and offline trained SegFlow model.
 
-`cd $SegFlow_ROOT
+`cd $SegFlow_ROOT`
 
-mkdir models
+`mkdir models`
 
-cd models
+`cd models`
 
-wget https://www.dropbox.com/s/9ega4py8uzvya72/SegFlow.caffemodel`
+`wget https://www.dropbox.com/s/9ega4py8uzvya72/SegFlow.caffemodel`
 
 2. Download DAVIS 2017 dataset and put it in `$SegFlow_ROOT/data`.
 
 3. Install caffe and pycaffe.
 
-`cd $SegFlow_ROOT/caffe
+`cd $SegFlow_ROOT/caffe`
 
-make all -j8
+`make all -j8`
 
-make pycaffe`
+`make pycaffe`
 
 4. Run testing model.
 
-`cd $SegFlow_ROOT/demo
+`cd $SegFlow_ROOT/demo`
 
-python infer.py`
+`python infer.py`
 
 5. Train your own model.
 
