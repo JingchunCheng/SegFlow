@@ -57,14 +57,13 @@ Installation
 
 5. Train your own model.
 
-*See paper() for details of model training.
+*See [paper]() for details of model training.
 
 
 
 Acknowledgement
 --------------------------------------------------
 FlowNetS
-
 ResNet-101
 
 
