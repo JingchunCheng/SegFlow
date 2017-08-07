@@ -64,7 +64,7 @@ Installation
 Acknowledgement
 --------------------------------------------------
 SegFlow uses the following open source code:
-* FlowNetS
-* ResNet-101
+* [FlowNetS]() for initializing optical flow branch.
+* [ResNet-101]() for initializing segmentation branch.
 
 
