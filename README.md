@@ -63,7 +63,8 @@ Installation
 
 Acknowledgement
 --------------------------------------------------
-FlowNetS
-ResNet-101
+SegFlow uses the following open source code:
+* FlowNetS
+* ResNet-101
 
 
