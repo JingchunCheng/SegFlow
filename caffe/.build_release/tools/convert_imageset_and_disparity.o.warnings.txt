@@ -1,0 +1,10 @@
+tools/convert_imageset_and_disparity.cpp:5:1: warning: multi-line comment [-Wcomment]
+ //   convert_imageset [-g] ROOTFOLDER/ LISTFILE DB_NAME RANDOM_SHUFFLE[0 or 1] \
+ ^
+tools/convert_imageset_and_disparity.cpp: In function ‘int main(int, char**)’:
+tools/convert_imageset_and_disparity.cpp:354:7: warning: variable ‘data_size’ set but not used [-Wunused-but-set-variable]
+   int data_size;
+       ^
+tools/convert_imageset_and_disparity.cpp:404:16: warning: ‘batch’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+         delete batch;
+                ^

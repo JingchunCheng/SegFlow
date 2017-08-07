@@ -1,0 +1,64 @@
+nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+./include/caffe/layers/data_augmentation_layer.hpp(44): warning: function "caffe::Layer<Dtype>::CustomCopyBlobs(std::vector<caffe::Blob<float> *, std::allocator<caffe::Blob<float> *>>) [with Dtype=double]" is hidden by "caffe::DataAugmentationLayer<Dtype>::CustomCopyBlobs [with Dtype=double]" -- virtual function override intended?
+          detected during:
+            instantiation of class "caffe::DataAugmentationLayer<Dtype> [with Dtype=double]" 
+src/caffe/layers/flow_augmentation_layer.cu(38): here
+            instantiation of "void caffe::WarpData(int, int, int, int, const Dtype *, int, int, int, Dtype *, const caffe::AugmentationLayerBase<Dtype>::tTransMat *, const caffe::AugmentationLayerBase<Dtype>::tTransMat *) [with Dtype=double]" 
+src/caffe/layers/flow_augmentation_layer.cu(162): here
+            instantiation of "void caffe::FlowAugmentationLayer<Dtype>::Forward_gpu(const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &, const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &) [with Dtype=double]" 
+src/caffe/layers/flow_augmentation_layer.cu(168): here
+
+./include/caffe/layers/data_augmentation_layer.hpp(44): warning: function "caffe::Layer<Dtype>::CustomCopyBlobs(std::vector<caffe::Blob<float> *, std::allocator<caffe::Blob<float> *>>) [with Dtype=double]" is hidden by "caffe::DataAugmentationLayer<Dtype>::CustomCopyBlobs [with Dtype=double]" -- virtual function override intended?
+          detected during:
+            instantiation of class "caffe::DataAugmentationLayer<Dtype> [with Dtype=double]" 
+src/caffe/layers/flow_augmentation_layer.cu(38): here
+            instantiation of "void caffe::WarpData(int, int, int, int, const Dtype *, int, int, int, Dtype *, const caffe::AugmentationLayerBase<Dtype>::tTransMat *, const caffe::AugmentationLayerBase<Dtype>::tTransMat *) [with Dtype=double]" 
+src/caffe/layers/flow_augmentation_layer.cu(162): here
+            instantiation of "void caffe::FlowAugmentationLayer<Dtype>::Forward_gpu(const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &, const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &) [with Dtype=double]" 
+src/caffe/layers/flow_augmentation_layer.cu(168): here
+
+./include/caffe/layers/data_augmentation_layer.hpp(44): warning: function "caffe::Layer<Dtype>::CustomCopyBlobs(std::vector<caffe::Blob<float> *, std::allocator<caffe::Blob<float> *>>) [with Dtype=double]" is hidden by "caffe::DataAugmentationLayer<Dtype>::CustomCopyBlobs [with Dtype=double]" -- virtual function override intended?
+          detected during:
+            instantiation of class "caffe::DataAugmentationLayer<Dtype> [with Dtype=double]" 
+src/caffe/layers/flow_augmentation_layer.cu(38): here
+            instantiation of "void caffe::WarpData(int, int, int, int, const Dtype *, int, int, int, Dtype *, const caffe::AugmentationLayerBase<Dtype>::tTransMat *, const caffe::AugmentationLayerBase<Dtype>::tTransMat *) [with Dtype=double]" 
+src/caffe/layers/flow_augmentation_layer.cu(162): here
+            instantiation of "void caffe::FlowAugmentationLayer<Dtype>::Forward_gpu(const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &, const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &) [with Dtype=double]" 
+src/caffe/layers/flow_augmentation_layer.cu(168): here
+
+./include/caffe/layers/data_augmentation_layer.hpp(44): warning: function "caffe::Layer<Dtype>::CustomCopyBlobs(std::vector<caffe::Blob<float> *, std::allocator<caffe::Blob<float> *>>) [with Dtype=double]" is hidden by "caffe::DataAugmentationLayer<Dtype>::CustomCopyBlobs [with Dtype=double]" -- virtual function override intended?
+          detected during:
+            instantiation of class "caffe::DataAugmentationLayer<Dtype> [with Dtype=double]" 
+src/caffe/layers/flow_augmentation_layer.cu(38): here
+            instantiation of "void caffe::WarpData(int, int, int, int, const Dtype *, int, int, int, Dtype *, const caffe::AugmentationLayerBase<Dtype>::tTransMat *, const caffe::AugmentationLayerBase<Dtype>::tTransMat *) [with Dtype=double]" 
+src/caffe/layers/flow_augmentation_layer.cu(162): here
+            instantiation of "void caffe::FlowAugmentationLayer<Dtype>::Forward_gpu(const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &, const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &) [with Dtype=double]" 
+src/caffe/layers/flow_augmentation_layer.cu(168): here
+
+./include/caffe/layers/data_augmentation_layer.hpp(44): warning: function "caffe::Layer<Dtype>::CustomCopyBlobs(std::vector<caffe::Blob<float> *, std::allocator<caffe::Blob<float> *>>) [with Dtype=double]" is hidden by "caffe::DataAugmentationLayer<Dtype>::CustomCopyBlobs [with Dtype=double]" -- virtual function override intended?
+          detected during:
+            instantiation of class "caffe::DataAugmentationLayer<Dtype> [with Dtype=double]" 
+src/caffe/layers/flow_augmentation_layer.cu(38): here
+            instantiation of "void caffe::WarpData(int, int, int, int, const Dtype *, int, int, int, Dtype *, const caffe::AugmentationLayerBase<Dtype>::tTransMat *, const caffe::AugmentationLayerBase<Dtype>::tTransMat *) [with Dtype=double]" 
+src/caffe/layers/flow_augmentation_layer.cu(162): here
+            instantiation of "void caffe::FlowAugmentationLayer<Dtype>::Forward_gpu(const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &, const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &) [with Dtype=double]" 
+src/caffe/layers/flow_augmentation_layer.cu(168): here
+
+./include/caffe/layers/data_augmentation_layer.hpp(44): warning: function "caffe::Layer<Dtype>::CustomCopyBlobs(std::vector<caffe::Blob<float> *, std::allocator<caffe::Blob<float> *>>) [with Dtype=double]" is hidden by "caffe::DataAugmentationLayer<Dtype>::CustomCopyBlobs [with Dtype=double]" -- virtual function override intended?
+          detected during:
+            instantiation of class "caffe::DataAugmentationLayer<Dtype> [with Dtype=double]" 
+src/caffe/layers/flow_augmentation_layer.cu(38): here
+            instantiation of "void caffe::WarpData(int, int, int, int, const Dtype *, int, int, int, Dtype *, const caffe::AugmentationLayerBase<Dtype>::tTransMat *, const caffe::AugmentationLayerBase<Dtype>::tTransMat *) [with Dtype=double]" 
+src/caffe/layers/flow_augmentation_layer.cu(162): here
+            instantiation of "void caffe::FlowAugmentationLayer<Dtype>::Forward_gpu(const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &, const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &) [with Dtype=double]" 
+src/caffe/layers/flow_augmentation_layer.cu(168): here
+
+./include/caffe/layers/data_augmentation_layer.hpp(44): warning: function "caffe::Layer<Dtype>::CustomCopyBlobs(std::vector<caffe::Blob<float> *, std::allocator<caffe::Blob<float> *>>) [with Dtype=double]" is hidden by "caffe::DataAugmentationLayer<Dtype>::CustomCopyBlobs [with Dtype=double]" -- virtual function override intended?
+          detected during:
+            instantiation of class "caffe::DataAugmentationLayer<Dtype> [with Dtype=double]" 
+src/caffe/layers/flow_augmentation_layer.cu(38): here
+            instantiation of "void caffe::WarpData(int, int, int, int, const Dtype *, int, int, int, Dtype *, const caffe::AugmentationLayerBase<Dtype>::tTransMat *, const caffe::AugmentationLayerBase<Dtype>::tTransMat *) [with Dtype=double]" 
+src/caffe/layers/flow_augmentation_layer.cu(162): here
+            instantiation of "void caffe::FlowAugmentationLayer<Dtype>::Forward_gpu(const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &, const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &) [with Dtype=double]" 
+src/caffe/layers/flow_augmentation_layer.cu(168): here
+
