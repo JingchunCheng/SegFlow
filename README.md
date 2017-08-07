@@ -18,9 +18,7 @@ Video Results of SegFlow
 Citing SegFlow
 -------------------------------------------
 If you find SegFlow useful in your research, please consider citing:
-`
 
-`
 
 Requirements
 -------------------------------------------
@@ -57,14 +55,14 @@ Installation
 
 5. Train your own model.
 
-*See [paper]() for details of model training.
+*See our paper for details of model training.
 
 
 
 Acknowledgement
 --------------------------------------------------
 SegFlow uses the following open source code:
-* [FlowNetS]() for initializing optical flow branch.
-* [ResNet-101]() for initializing segmentation branch.
+* [FlowNetS](https://github.com/liruoteng/FlowNet) for initializing optical flow branch.
+* [ResNet-101](https://github.com/KaimingHe/deep-residual-networks) for initializing segmentation branch.
 
 
