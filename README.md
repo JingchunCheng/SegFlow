@@ -37,7 +37,7 @@ Installation
 
 `wget https://www.dropbox.com/s/9ega4py8uzvya72/SegFlow.caffemodel`
 
-2. Download [DAVIS 2017 dataset](http://davischallenge.org/code.html) and put it in `$SegFlow_ROOT/data`.
+2. Download [DAVIS 2016 dataset](http://davischallenge.org/code.html) and put it in `$SegFlow_ROOT/data`.
 
 3. Install caffe and pycaffe.
 
