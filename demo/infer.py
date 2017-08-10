@@ -33,7 +33,7 @@ def load_image(im_name):
 
 
 davis_dir = '../data/DAVIS/'
-split_f  = '{}/ImageSets/480p/trainval.txt'.format(davis_dir)
+split_f  = '{}/ImageSets/480p/train.txt'.format(davis_dir)
 
 caffe_model  = '../models/SegFlow.caffemodel'
 deploy_proto = '../prototxts/deploy.prototxt'
@@ -54,14 +54,16 @@ for idx in range(len(indices)):
     clip1 = indices[idx].split(' ')[0].split('/')[-2]
     clip2 = indices[idx+1].split(' ')[0].split('/')[-2]
 
-    if clip1 != clip2 : # No flow for different clips
-        continue
+
 
     # load image + label image pair
     im_name_1 = '{}/{}'.format(davis_dir, indices[idx].split(' ')[0])
     im_name_2 = '{}/{}'.format(davis_dir, indices[idx+1].split(' ')[0])
 
-    img_name = indices[idx+1].split(' ')[1]
+    if clip1 != clip2 : 
+        im_name_2 = im_name_1
+      
+    img_name = indices[idx].split(' ')[1]
     ss = img_name.split('/')
     ss = ss[len(ss)-1]
     ss = ss[0:len(ss)-4]
@@ -77,8 +79,8 @@ for idx in range(len(indices)):
     img1 = load_image(im_name_1)
     img2 = load_image(im_name_2)
 
-    net.blobs['data'].reshape(1, *img1.shape) 
-    net.blobs['data2'].reshape(1, *img1.shape)
+    net.blobs['data'].reshape(1,  *img1.shape) 
+    net.blobs['data2'].reshape(1, *img2.shape)
     net.blobs['data'].data[...] = img1
     net.blobs['data2'].data[...] = img2
     
@@ -87,7 +89,6 @@ for idx in range(len(indices)):
 
     print(im_name_2)
     out1 = net.blobs['score'].data[0].argmax(axis=0)
-    out1 = out1*255
     out1 = np.array(out1, dtype=np.float32)
     res_img = Image.fromarray(out1)
     res_img.convert('L').save(seg_name)
