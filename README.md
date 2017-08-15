@@ -56,8 +56,9 @@ Installation
 `python infer.py`
 
 5. Train your own model.
-
-*See our paper for details of model training.
+This code provides an example of parent net (Ours_OL) for SegFlow.
+To obtain accurate video object segmentation, you can fine-tune the model with each video's 1st frame mask.\
+*Details of model training are presented in our paper.
 
 
 
