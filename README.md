@@ -41,7 +41,7 @@ This is the authors' demo code described in the above paper. Please cite our pap
 ## Demo on DAVIS 2016 <br />
 `cd demo` <br />
 `python infer.py VIDEO_NAME` <br />
-For example, run `python infer.py lions`
+For example, run `python infer.py lions` <br />
 
 This code provides a demo for the parent net (Ours_OL) in SegFlow. The output contains both the segmentation and optical flow results.
 
