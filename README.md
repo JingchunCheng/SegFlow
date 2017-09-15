@@ -22,7 +22,6 @@ This is the authors' demo code described in the above paper. Please cite our pap
 ```
 
 ## Our Results of SegFlow
--------------------------------------------
 [Optical Flow Comparison](https://www.youtube.com/watch?v=pyYbqeBteq4&feature=youtu.be)
 
 [Comparison with Unsupervised Method](https://www.youtube.com/watch?v=MzWSGgPMTlo&feature=youtu.be)
