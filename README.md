@@ -38,19 +38,23 @@ This is the authors' demo code described in the above paper. Please cite our pap
 
 * Download our pre-trained caffe model [here](http://vllab1.ucmerced.edu/~ytsai/ICCV17/SegFlow.caffemodel) and put it in the **model** folder.
 
-## Testing <br />
+## Demo on DAVIS 2016 <br />
 `cd demo` <br />
-`python infer.py` <br />
+`python infer.py VIDEO_NAME` <br />
+For example, run `python infer.py lions`
 
-This code provides an example of parent net (Ours_OL) for SegFlow.
+This code provides a demo for the parent net (Ours_OL) in SegFlow. The output contains both the segmentation and optical flow results.
+
+## Test on your own Videos <br />
+`cd demo` <br />
+`python infer_video.py VIDEO_FILE` <br />
+For example, run `python infer.py video_example.mp4`
 
 ## Download Our Segmentation Results on DAVIS 2016
-
 * SegFlow without online training step (Ours_OL) [here](http://vllab1.ucmerced.edu/~ytsai/ICCV17/Ours_OL.zip)
 * SegFlow without optical flow branch (Ours_FLO) [here](http://vllab1.ucmerced.edu/~ytsai/ICCV17/Ours_FLO.zip)
 * Final SegFlow results [here](http://vllab1.ucmerced.edu/~ytsai/ICCV17/Ours.zip)
 
 ## Note
 The model and code are available for non-commercial research purposes only.
-
 * 09/2017: demo code released
