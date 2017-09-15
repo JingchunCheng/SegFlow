@@ -21,12 +21,12 @@ This is the authors' demo code described in the above paper. Please cite our pap
 }
 ```
 
-## Our Results of SegFlow
-[Optical Flow Comparison](https://www.youtube.com/watch?v=pyYbqeBteq4&feature=youtu.be)
+## SegFlow Results
+[Segmentation Comparisons with Unsupervised Method](https://www.youtube.com/watch?v=MzWSGgPMTlo&feature=youtu.be)
 
-[Comparison with Unsupervised Method](https://www.youtube.com/watch?v=MzWSGgPMTlo&feature=youtu.be)
+[Segmentation Comparisons with Semi-supervised Method](https://www.youtube.com/watch?v=FN_ePVSDMvo&feature=youtu.be)
 
-[Comparison with Semi-supervised Method](https://www.youtube.com/watch?v=FN_ePVSDMvo&feature=youtu.be)
+[Optical Flow Comparisons](https://www.youtube.com/watch?v=pyYbqeBteq4&feature=youtu.be)
 
 ## Requirements
 * Install `caffe` and `pycaffe` contained in this project. <br />
