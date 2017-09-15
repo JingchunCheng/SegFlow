@@ -1,6 +1,6 @@
 # SegFlow: Joint Learning for Video Object Segmentation and Optical Flow
 
-![Alt Text](http://vllab1.ucmerced.edu/~ytsai/ICCV17/iccv17_segflow.png) 
+![Alt Text](http://vllab1.ucmerced.edu/~ytsai/ICCV17/iccv17_segflow_git.png) 
 
 Project webpage: https://sites.google.com/site/yihsuantsai/research/iccv17-segflow <br />
 Contact: Jingchun Cheng (chengjingchun at gmail dot com)
