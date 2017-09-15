@@ -50,3 +50,8 @@ This code provides an example of parent net (Ours_OL) for SegFlow.
 * SegFlow without online training step (Ours_OL) [here](http://vllab1.ucmerced.edu/~ytsai/ICCV17/Ours_OL.zip)
 * SegFlow without optical flow branch (Ours_FLO) [here](http://vllab1.ucmerced.edu/~ytsai/ICCV17/Ours_FLO.zip)
 * Final SegFlow results [here](http://vllab1.ucmerced.edu/~ytsai/ICCV17/Ours.zip)
+
+## Note
+The model and code are available for non-commercial research purposes only.
+
+* 09/2017: demo code released
