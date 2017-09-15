@@ -1,74 +1,60 @@
-SegFlow
-=========================================
-Introduction
------------------------------------------
-This paper proposes an end-to-end trainable network, SegFlow, for simultaneously predicting pixel-wise object segmentation and optical flow in videos. The proposed SegFlow has two branches where useful information of object segmentation and optical flow is propagated bidirectionally in a unified framework. The segmentation branch is based on a fully convolutional network, which has been proved effective in image segmentation task, and the optical flow branch takes advantage of the FlowNet model. The unified framework is trained iteratively offline to learn a generic notion, and fine tuned online for specific objects. Extensive experiments on both the video object segmentation and optical flow datasets demonstrate that introducing optical flow improves the performance of segmentation and vice versa, against the state-of-the-art algorithms.
+# SegFlow: Joint Learning for Video Object Segmentation and Optical Flow
 
-Results of SegFlow (Ours), SegFlow without optical flow branch (Ours_FLO), and SegFlow without online training step (SegFlow_OL) are shown in folder 'results'.
+![Alt Text](http://vllab1.ucmerced.edu/~ytsai/ICCV17/iccv17_segflow_git.png) 
 
-[SegFlow]() will be published at ICCV2017.
+Project webpage: https://sites.google.com/site/yihsuantsai/research/iccv17-segflow <br />
+Contact: Jingchun Cheng (chengjingchun at gmail dot com)
 
-Video Results of SegFlow
--------------------------------------------
-[Optical Flow Comparison](https://www.youtube.com/watch?v=pyYbqeBteq4&feature=youtu.be)
+## Paper
+SegFlow: Joint Learning for Video Object Segmentation and Optical Flow <br />
+Jingchun Cheng, Yi-Hsuan Tsai, Shengjin Wang and Ming-Hsuan Yang <br />
+IEEE International Conference on Computer Vision (ICCV), 2017.
 
-[Comparison with Unsupervised Method](https://www.youtube.com/watch?v=MzWSGgPMTlo&feature=youtu.be)
+This is the authors' demo code described in the above paper. Please cite our paper if you find it useful for your research.
 
-[Comparison with Semi-supervised Method](https://www.youtube.com/watch?v=FN_ePVSDMvo&feature=youtu.be)
+```
+@inproceedings{Cheng_ICCV_2017,
+  author = {J. Cheng and Y.-H. Tsai and S. Wang and M.-H. Yang},
+  booktitle = {IEEE International Conference on Computer Vision (ICCV)},
+  title = {SegFlow: Joint Learning for Video Object Segmentation and Optical Flow},
+  year = {2017}
+}
+```
 
+## SegFlow Results
+[Segmentation Comparisons with Unsupervised Method](https://www.youtube.com/watch?v=MzWSGgPMTlo&feature=youtu.be)
 
-Citing SegFlow
--------------------------------------------
-If you find SegFlow useful in your research, please consider citing:
+[Segmentation Comparisons with Semi-supervised Method](https://www.youtube.com/watch?v=FN_ePVSDMvo&feature=youtu.be)
 
+[Optical Flow Comparisons](https://www.youtube.com/watch?v=pyYbqeBteq4&feature=youtu.be)
 
-Requirements
--------------------------------------------
-Requirements for `caffe` and `pycaffe`.
-
-
-Installation
------------------------------------------------------
-1. Download code and offline trained SegFlow model.
-
-`cd $SegFlow_ROOT`
-
-`mkdir models`
-
-`cd models`
-
-`wget https://www.dropbox.com/s/9ega4py8uzvya72/SegFlow.caffemodel`
-
-2. Download [DAVIS 2016 dataset](http://davischallenge.org/code.html) and put it in `$SegFlow_ROOT/data`.
-
-3. Install caffe and pycaffe.
-
-`cd $SegFlow_ROOT/caffe`
-
-`make all -j8`
-
+## Requirements
+* Install `caffe` and `pycaffe` contained in this project. <br />
+`cd caffe` <br />
+`make all -j8` <br />
 `make pycaffe`
 
-4. Run testing model.
+* Download the [DAVIS 2016 dataset](http://davischallenge.org/code.html) and put it in the **data** folder.
 
-`cd $SegFlow_ROOT/demo`
+* Download our pre-trained caffe model [here](http://vllab1.ucmerced.edu/~ytsai/ICCV17/SegFlow.caffemodel) and put it in the **model** folder.
 
-`python infer.py`
+## Demo on DAVIS 2016 <br />
+`cd demo` <br />
+`python infer.py VIDEO_NAME` <br />
+For example, run `python infer.py lions` <br />
 
-5. Train your own model.
+This code provides a demo for the parent net (Ours_OL) in SegFlow. The output contains both the segmentation and optical flow results.
 
-This code provides an example of parent net (Ours_OL) for SegFlow.
+## Test on your own Videos <br />
+`cd demo` <br />
+`python infer_video.py VIDEO_FILE` <br />
+For example, run `python infer.py video_example.mp4`
 
-To obtain accurate video object segmentation, you can fine-tune the model with each video's 1st frame mask.\
+## Download Our Segmentation Results on DAVIS 2016
+* SegFlow without online training step (Ours_OL) [here](http://vllab1.ucmerced.edu/~ytsai/ICCV17/Ours_OL.zip)
+* SegFlow without optical flow branch (Ours_FLO) [here](http://vllab1.ucmerced.edu/~ytsai/ICCV17/Ours_FLO.zip)
+* Final SegFlow results [here](http://vllab1.ucmerced.edu/~ytsai/ICCV17/Ours.zip)
 
-*Details of model training are presented in our paper.
-
-
-
-Acknowledgement
---------------------------------------------------
-SegFlow uses the following open source code:
-* [FlowNetS](https://github.com/liruoteng/FlowNet) for initializing optical flow branch.
-* [ResNet-101](https://github.com/KaimingHe/deep-residual-networks) for initializing segmentation branch.
-
-
+## Note
+The model and code are available for non-commercial research purposes only.
+* 09/2017: demo code released
