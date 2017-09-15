@@ -31,6 +31,7 @@ def load_image(im_name):
     print >> sys.stderr, 'loading {}'.format(im_name)
     return in_
 
+cls_name = sys.argv[1]
 
 davis_dir = '../data/DAVIS/'
 split_f  = '{}/ImageSets/480p/train.txt'.format(davis_dir)
@@ -46,44 +47,38 @@ caffe.set_device(device_id)
 caffe.set_mode_gpu()
 net = caffe.Net(deploy_proto , caffe_model, caffe.TEST)
 
-indices = open(split_f, 'r').read().splitlines()
-print >> sys.stderr, 'Total Number of Images: {}'.format(len(indices))
+file_path = '{}/JPEGImages/480p/{}'.format(davis_dir, cls_name)
+images    = os.listdir(file_path)
 
 
-for idx in range(len(indices)):
-    clip1 = indices[idx].split(' ')[0].split('/')[-2]
-    clip2 = indices[idx+1].split(' ')[0].split('/')[-2]
+for idx in range(len(images)):
+    if idx == len(images) - 1:
+      im_name_1 = '{}/{}'.format(file_path,images[idx])
+      im_name_2 = im_name_1
+    else:
+      im_name_1 = '{}/{}'.format(file_path,images[idx])
+      im_name_2 = '{}/{}'.format(file_path,images[idx+1])
 
 
-
-    # load image + label image pair
-    im_name_1 = '{}/{}'.format(davis_dir, indices[idx].split(' ')[0])
-    im_name_2 = '{}/{}'.format(davis_dir, indices[idx+1].split(' ')[0])
-
-    if clip1 != clip2 : 
-        im_name_2 = im_name_1
-      
-    img_name = indices[idx].split(' ')[1]
-    ss = img_name.split('/')
-    ss = ss[len(ss)-1]
-    ss = ss[0:len(ss)-4]
-    flow_name   = '{}/{}/{}.mat'.format(file_out, clip1, ss) 
-    seg_name    = '{}/{}/{}.jpg'.format(file_out, clip1, ss) 
+    ss = images[idx].split('.jpg')
+    ss = ss[0]
+    flow_name   = '{}/{}/{}.mat'.format(file_out, cls_name, ss)
+    seg_name    = '{}/{}/{}.jpg'.format(file_out, cls_name, ss)
 
     if os.path.exists(file_out) == False:
         os.mkdir(file_out)
 
-    if os.path.exists('{}/{}'.format(file_out, clip1)) == False:
-        os.mkdir('{}/{}'.format(file_out, clip1))
+    if os.path.exists('{}/{}'.format(file_out, cls_name)) == False:
+        os.mkdir('{}/{}'.format(file_out, cls_name))
 
     img1 = load_image(im_name_1)
     img2 = load_image(im_name_2)
 
-    net.blobs['data'].reshape(1,  *img1.shape) 
+    net.blobs['data'].reshape(1,  *img1.shape)
     net.blobs['data2'].reshape(1, *img2.shape)
-    net.blobs['data'].data[...] = img1
+    net.blobs['data'].data[...]  = img1
     net.blobs['data2'].data[...] = img2
-    
+
 
     net.forward()
 
@@ -97,6 +92,4 @@ for idx in range(len(indices)):
     io.savemat(flow_name, {'flo': out2})
 
 
-
 print('done')
-
