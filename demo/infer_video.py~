@@ -63,9 +63,6 @@ while flag:
     flow_name   = '{}/{:0>5d}.mat'.format(file_out, num)
     seg_name    = '{}/{:0>5d}.jpg'.format(file_out, num)
 
-    if os.path.exists(file_out) == False:
-        os.mkdir(file_out)
-
     net.blobs['data'].reshape(1,  *img1.shape) 
     net.blobs['data2'].reshape(1, *img2.shape)
     net.blobs['data'].data[...]  = img1
