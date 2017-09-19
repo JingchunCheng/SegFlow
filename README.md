@@ -29,12 +29,10 @@ This is the authors' demo code described in the above paper. Please cite our pap
 [Optical Flow Comparisons](https://www.youtube.com/watch?v=pyYbqeBteq4&feature=youtu.be)
 
 ## Requirements
-* Install `caffe` and `pycaffe` contained in this project. <br />
+* Install `caffe` and `pycaffe` (`opencv` is required to install). <br />
 `cd caffe` <br />
 `make all -j8` (paths may be needed to change in the configuration file) <br />
 `make pycaffe` <br />
-
-Note that, `opencv` is required.
 
 * Download the [DAVIS 2016 dataset](http://davischallenge.org/code.html) and put it in the **data** folder.
 
