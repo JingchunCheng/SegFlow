@@ -48,7 +48,7 @@ This code provides a demo for the parent net (Ours_OL) in SegFlow. The output co
 ## Test on your own Videos <br />
 `cd demo` <br />
 `python infer_video.py VIDEO_FILE` <br />
-For example, run `python infer_video.py video_example.mp4`
+For example, run `python infer_video.py ../data/video_example.mp4`
 
 ## Download Our Segmentation Results on DAVIS 2016
 * SegFlow without online training step (Ours_OL) [here](http://vllab1.ucmerced.edu/~ytsai/ICCV17/Ours_OL.zip)
