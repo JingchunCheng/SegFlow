@@ -31,7 +31,7 @@ This is the authors' demo code described in the above paper. Please cite our pap
 ## Requirements
 * Install `caffe` and `pycaffe` (`opencv` is required). <br />
 `cd caffe` <br />
-`make all -j8` (paths may be needed to change in the configuration file) <br />
+`make all -j8` (paths are needed to change in the configuration file) <br />
 `make pycaffe` <br />
 
 * Download the [DAVIS 2016 dataset](http://davischallenge.org/code.html) and put it in the **data** folder.
