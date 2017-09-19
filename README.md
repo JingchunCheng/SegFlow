@@ -31,8 +31,10 @@ This is the authors' demo code described in the above paper. Please cite our pap
 ## Requirements
 * Install `caffe` and `pycaffe` contained in this project. <br />
 `cd caffe` <br />
-`make all -j8` <br />
-`make pycaffe`
+`make all -j8` (paths may be needed to change in the configuration file) <br />
+`make pycaffe` <br />
+
+Note that, `opencv` is required.
 
 * Download the [DAVIS 2016 dataset](http://davischallenge.org/code.html) and put it in the **data** folder.
 
@@ -48,7 +50,7 @@ This code provides a demo for the parent net (Ours_OL) in SegFlow. The output co
 ## Test on your own Videos <br />
 `cd demo` <br />
 `python infer_video.py VIDEO_FILE` <br />
-For example, run `python infer.py video_example.mp4`
+For example, run `python infer_video.py video_example.mp4`
 
 ## Download Our Segmentation Results on DAVIS 2016
 * SegFlow without online training step (Ours_OL) [here](http://vllab1.ucmerced.edu/~ytsai/ICCV17/Ours_OL.zip)
