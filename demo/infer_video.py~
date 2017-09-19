@@ -2,6 +2,7 @@ import os,sys
 sys.path.append("../caffe/")
 sys.path.append("../caffe/python")
 sys.path.append("../caffe/python/caffe")
+sys.path.insert(0, "../python_layers/")
 sys.path.insert(0,"../fcn_python/")
 
 
