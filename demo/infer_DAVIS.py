@@ -82,7 +82,7 @@ for idx in range(len(images)):
     net.forward()
 
     print(im_name_2)
-    out1 = net.blobs['score'].data[0].argmax(axis=0)
+    out1 = net.blobs['score'].data[0].argmax(axis=0)*255
     out1 = np.array(out1, dtype=np.float32)
     res_img = Image.fromarray(out1)
     res_img.convert('L').save(seg_name)
