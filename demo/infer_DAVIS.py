@@ -62,7 +62,7 @@ for idx in range(len(images)):
     ss = images[idx].split('.jpg')
     ss = ss[0]
     flow_name   = '{}/{}/{}.mat'.format(file_out, cls_name, ss)
-    seg_name    = '{}/{}/{}.jpg'.format(file_out, cls_name, ss)
+    seg_name    = '{}/{}/{}.png'.format(file_out, cls_name, ss)
 
     if os.path.exists(file_out) == False:
         os.mkdir(file_out)
