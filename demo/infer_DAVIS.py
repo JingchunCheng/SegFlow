@@ -33,7 +33,7 @@ def load_image(im_name):
 cls_name = sys.argv[1]
 
 davis_dir = '../data/DAVIS/'
-split_f  = '{}/ImageSets/480p/train.txt'.format(davis_dir)
+
 
 caffe_model  = '../model/SegFlow.caffemodel'
 deploy_proto = '../model/deploy.prototxt'
