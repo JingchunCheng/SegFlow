@@ -33,7 +33,7 @@ video_name = sys.argv[1]
 
 caffe_model  = '../model/SegFlow.caffemodel'
 deploy_proto = '../model/deploy.prototxt'
-file_out     = '../results/' + video_name[8:-4] + '/'
+file_out     = '../results/' + video_name[8:-4]
 
 device_id    = 1  
 
