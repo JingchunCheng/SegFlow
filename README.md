@@ -36,7 +36,7 @@ This is the authors' demo code described in the above paper. Please cite our pap
 
 * Download the [DAVIS 2016 dataset](http://davischallenge.org/code.html) and put it in the **data** folder.
 
-* Download our pre-trained caffe model [here](http://vllab1.ucmerced.edu/~ytsai/ICCV17/SegFlow.caffemodel) and put it in the **model** folder.
+* Download our pre-trained caffe model [here](http://vllab.ucmerced.edu/ytsai/ICCV17/SegFlow.caffemodel) and put it in the **model** folder.
 
 ## Demo on DAVIS 2016 <br />
 `cd demo` <br />
@@ -51,9 +51,9 @@ This code provides a demo for the parent net (Ours_OL) in SegFlow. The output co
 For example, run `python infer_video.py ../data/video_example.mp4`
 
 ## Download Our Segmentation Results on DAVIS 2016
-* SegFlow without online training step (Ours_OL) [here](http://vllab1.ucmerced.edu/~ytsai/ICCV17/Ours_OL.zip)
-* SegFlow without optical flow branch (Ours_FLO) [here](http://vllab1.ucmerced.edu/~ytsai/ICCV17/Ours_FLO.zip)
-* Final SegFlow results [here](http://vllab1.ucmerced.edu/~ytsai/ICCV17/Ours.zip)
+* SegFlow without online training step (Ours_OL) [here](http://vllab.ucmerced.edu/ytsai/ICCV17/Ours_OL.zip)
+* SegFlow without optical flow branch (Ours_FLO) [here](http://vllab.ucmerced.edu/ytsai/ICCV17/Ours_FLO.zip)
+* Final SegFlow results [here](http://vllab.ucmerced.edu/~ytsai/ICCV17/Ours.zip)
 
 ## Note
 The model and code are available for non-commercial research purposes only.
