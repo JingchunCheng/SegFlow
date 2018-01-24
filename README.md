@@ -58,3 +58,4 @@ For example, run `python infer_video.py ../data/video_example.mp4`
 ## Note
 The model and code are available for non-commercial research purposes only.
 * 09/2017: demo code released
+* 01/2018: the pre-trained caffe model is updated
