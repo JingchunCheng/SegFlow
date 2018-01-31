@@ -53,7 +53,7 @@ For example, run `python infer_video.py ../data/video_example.mp4`
 ## Download Our Segmentation Results on DAVIS 2016
 * SegFlow without online training step (Ours_OL) [here](http://vllab.ucmerced.edu/ytsai/ICCV17/Ours_OL.zip)
 * SegFlow without optical flow branch (Ours_FLO) [here](http://vllab.ucmerced.edu/ytsai/ICCV17/Ours_FLO.zip)
-* Final SegFlow results [here](http://vllab.ucmerced.edu/~ytsai/ICCV17/Ours.zip)
+* Final SegFlow results [here](http://vllab.ucmerced.edu/ytsai/ICCV17/Ours.zip)
 
 ## Note
 The model and code are available for non-commercial research purposes only.
