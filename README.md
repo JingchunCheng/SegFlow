@@ -50,7 +50,7 @@ This code provides a demo for the parent net (Ours_OL) in SegFlow. The output co
 `python infer_video.py VIDEO_FILE` <br />
 For example, run `python infer_video.py ../data/video_example.mp4`
 
-## Training code on DAVIS 2016 for the parent net (Ours_OL)
+## Training code on DAVIS 2016 (Ours_OL)
 `cd training` <br />
 `sh train.sh` <br />
 
@@ -63,3 +63,4 @@ For example, run `python infer_video.py ../data/video_example.mp4`
 The model and code are available for non-commercial research purposes only.
 * 09/2017: demo code released
 * 01/2018: the pre-trained caffe model is updated
+* 02/2018: training code for the parent net (unsupervised setting) is released
