@@ -1,0 +1,20 @@
+net: "train_SegFlow_DAVIS2016_PN.prototxt"
+
+display: 20
+
+lr_policy: "step"
+stepsize: 50000
+gamma: 0.5
+
+# lr for unnormalized softmax
+base_lr: 1e-9
+
+# high momentum
+momentum: 0.9
+
+max_iter: 200000
+weight_decay: 0.0005
+snapshot: 5000
+
+snapshot_prefix: "../model/SegFlow"
+test_initialization: false
