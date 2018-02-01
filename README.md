@@ -51,6 +51,7 @@ This code provides a demo for the parent net (Ours_OL) in SegFlow. The output co
 For example, run `python infer_video.py ../data/video_example.mp4`
 
 ## Training code on DAVIS 2016 (Ours_OL)
+Download the [segmentation](http://vllab.ucmerced.edu/ytsai/ICCV17/ResNet-101-model.caffemodel) and [flow](http://vllab.ucmerced.edu/ytsai/ICCV17/flownets_conv1rename.caffemodel) pre-trained weights, and put them in the **model** folder.
 `cd training` <br />
 `sh train.sh` <br />
 
