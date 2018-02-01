@@ -50,6 +50,10 @@ This code provides a demo for the parent net (Ours_OL) in SegFlow. The output co
 `python infer_video.py VIDEO_FILE` <br />
 For example, run `python infer_video.py ../data/video_example.mp4`
 
+## Training code on DAVIS 2016 for the parent net (Ours_OL)
+`cd training` <br />
+`sh train.sh` <br />
+
 ## Download Our Segmentation Results on DAVIS 2016
 * SegFlow without online training step (Ours_OL) [here](http://vllab.ucmerced.edu/ytsai/ICCV17/Ours_OL.zip)
 * SegFlow without optical flow branch (Ours_FLO) [here](http://vllab.ucmerced.edu/ytsai/ICCV17/Ours_FLO.zip)
