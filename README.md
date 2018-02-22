@@ -6,7 +6,7 @@ Project webpage: https://sites.google.com/site/yihsuantsai/research/iccv17-segfl
 Contact: Jingchun Cheng (chengjingchun at gmail dot com)
 
 ## Paper
-SegFlow: Joint Learning for Video Object Segmentation and Optical Flow <br />
+[SegFlow: Joint Learning for Video Object Segmentation and Optical Flow](https://arxiv.org/abs/1709.06750) <br />
 Jingchun Cheng, Yi-Hsuan Tsai, Shengjin Wang and Ming-Hsuan Yang <br />
 IEEE International Conference on Computer Vision (ICCV), 2017.
 
