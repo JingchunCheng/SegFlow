@@ -208,7 +208,7 @@ void ResampleLayer<Dtype>::Forward_gpu(const vector<Blob<Dtype>*>& bottom,
 template <typename Dtype>
 void ResampleLayer<Dtype>::Backward_gpu(const vector<Blob<Dtype>*>& top,
       const vector<bool>& propagate_down, const vector<Blob<Dtype>*>& bottom) {
-  LOG(FATAL) << "ResampleLayer cannot do backward.";
+//  LOG(FATAL) << "ResampleLayer cannot do backward.";
 }
 
 
