@@ -93,9 +93,6 @@ class SegFlowDAVISFgBgDataLayer(caffe.Layer):
                self.img1   = self.load_image(self.indices[idx1].split(' ')[0])
                self.img2   = self.load_image(self.indices[idx2].split(' ')[0])
                self.label  = self.load_label(self.indices[idx1].split(' ')[1])
-               self.img1   = imresize(self.img1,    size=(self.H, self.W), interp="bilinear")
-               self.img2   = imresize(self.img2,    size=(self.H, self.W), interp="bilinear")
-               self.label  = imresize(self.label,   size=(self.H, self.W), interp="nearest")
             else:
                scale       =  (random.random()*2-1) * self.max_scale
                rotation    =  (random.random()*2-1) * self.max_rotate
@@ -109,11 +106,6 @@ class SegFlowDAVISFgBgDataLayer(caffe.Layer):
                self.img2   = self.load_image_transform(self.indices[idx2].split(' ')[0], scale, rotation, trans_h, trans_w, flip)
                self.label  = self.load_label_transform(self.indices[idx1].split(' ')[1], scale, rotation, trans_h, trans_w, flip)
 
-
- #           if self.scale != 1:
- #              self.img1   = imresize(self.img1,    size=(np.int(self.H*self.scale), np.int(self.W*self.scale)), interp="bilinear")
- #              self.img2   = imresize(self.img2,    size=(np.int(self.H*self.scale), np.int(self.W*self.scale)), interp="bilinear")
- #              self.label  = imresize(self.label,   size=(np.int(self.H*self.scale), np.int(self.W*self.scale)), interp="nearest")
 
             self.weight = self.calculate_weight(self.label)
 
